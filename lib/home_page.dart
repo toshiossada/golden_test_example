@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
               child: CustomTextWidget(
                 key: const Key('txtPassword'),
                 obscureText: hide,
-                initialValue: 'sdfsdfsdf',
+                initialValue: '',
                 eyePressed: () {
                   setState(() {
                     hide = !hide;
