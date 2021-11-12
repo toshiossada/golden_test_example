@@ -9,6 +9,12 @@ void main() {
   testGoldens('Warning Color', (tester) async {
     await loadAppFonts();
     final builder = DeviceBuilder()
+      ..overrideDevicesForAllScenarios(devices: [
+        Device.phone,
+        Device.iphone11,
+        Device.tabletPortrait,
+        Device.tabletLandscape,
+      ])
       ..addScenario(
         name: 'No Text',
         widget: const HomePage(),
