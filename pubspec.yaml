@@ -1,0 +1,28 @@
+name: goldentest
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+scripts:
+  goldentest: flutter test --update-goldens --tags=golden
+  goldentest_compare: flutter test --tags=golden
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+  golden_toolkit: ^0.11.0
+
+flutter:
+  uses-material-design: true
