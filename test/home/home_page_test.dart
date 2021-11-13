@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:goldentest/home_page.dart';
 
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:goldentest/widgets/custom_textbox_widget.dart';
 
 void main() {
   testGoldens('Warning Color', (tester) async {

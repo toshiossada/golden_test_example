@@ -19,8 +19,8 @@ class CustomTextWidget extends StatelessWidget {
       obscureText: obscureText,
       decoration: InputDecoration(
         fillColor: Colors.red,        
-        labelText: 'Custom Text2',
-        //labelText: 'Custom Text',
+        // labelText: 'Custom Text2',
+        labelText: 'Custom Text',
         suffixIcon: IconButton(
           icon: Icon(obscureText ? Icons.visibility : Icons.visibility_off),
           onPressed: eyePressed,
